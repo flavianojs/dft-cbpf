@@ -8,6 +8,7 @@ run with [Quantum ESPRESSO](https://www.quantum-espresso.org) on Google Colab.
 ```
 src/silicon/pw.scf.silicon.in       silicon SCF input (do not edit: copy it)
 src/pseudos/Si.pz-vbc.UPF           norm-conserving LDA pseudopotential for Si
+src/qe_fix.c                        fix for the pw.x crash on Ubuntu 24.04 (Colab)
 calculations/reference/             reference outputs to compare with yours
 calculations/aula6/                 created by you during Aula 6
 notebooks/aula6_handson.ipynb       Aula 6 notebook
