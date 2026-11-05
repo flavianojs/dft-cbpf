@@ -1,0 +1,8 @@
+# QE scratch (outdir = './tmp/')
+tmp/
+*.save/
+*.wfc*
+*.mix*
+# your own runs
+calculations/aula6/
+.ipynb_checkpoints/
