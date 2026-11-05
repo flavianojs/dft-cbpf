@@ -17,7 +17,7 @@ notebooks/aula6_handson.ipynb       Aula 6 notebook
 ## Aula 6 — getting started
 
 1. Open the notebook in Colab:
-   `https://colab.research.google.com/github/flavianojs/dft-cbpf/blob/main/notebooks/aula6_handson.ipynb`
+   [Open aula6_handson.ipynb in Colab](https://colab.research.google.com/github/flavianojs/dft-cbpf/blob/main/notebooks/aula6_handson.ipynb)
 2. Run section 1 (installs Quantum ESPRESSO 6.7 with `apt`, about 1 min).
 3. Run section 2: it mounts your Google Drive and clones this repository into
    `MyDrive/dft-cbpf`. Your inputs and outputs are saved there and survive between sessions.
