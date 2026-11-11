@@ -7,11 +7,15 @@ run with [Quantum ESPRESSO](https://www.quantum-espresso.org) on Google Colab.
 
 ```
 src/silicon/pw.scf.silicon.in       silicon SCF input (do not edit: copy it)
+src/fe/pw.scf.fe.in                 bcc iron, spin-polarized (Aula 7)
 src/pseudos/Si.pz-vbc.UPF           norm-conserving LDA pseudopotential for Si
+src/pseudos/Fe.pbe-spn-rrkjus_psl.1.0.0.UPF   ultrasoft PBE pseudopotential for Fe
 src/qe_fix.c                        fix for the pw.x crash on Ubuntu 24.04 (Colab)
 calculations/reference/             reference outputs to compare with yours
-calculations/aula6/                 created by you during Aula 6
+calculations/aula6/, aula7/        created by you during the classes
 notebooks/aula6_handson.ipynb       Aula 6 notebook
+notebooks/aula7_handson.ipynb       Aula 7 notebook
+slides das aulas/                   lecture slides (PDF)
 ```
 
 ## Aula 6 — getting started
@@ -27,9 +31,19 @@ In a new session, re-run sections 1 and 2 (the clone is skipped if the folder al
 
 Expected numbers for every step are in `calculations/reference/expected_aula6.md`.
 
+## Aula 7 — bands, DOS and magnetism
+
+[Open aula7_handson.ipynb in Colab](https://colab.research.google.com/github/flavianojs/dft-cbpf/blob/main/notebooks/aula7_handson.ipynb)
+
+Section 1 has the same two setup cells as in Aula 6 (install, then Drive); the Drive cell
+now also runs `git pull`, which brings the new files (the Fe input and pseudopotential) into
+the copy already in your Drive.
+Expected numbers: `calculations/reference/expected_aula7.md`.
+
 ## Credits
 
 Inputs, pseudopotential and reference output come from the tutorial
 [coteo-cbpf/Quantum-Espresso-tutorial](https://github.com/coteo-cbpf/Quantum-Espresso-tutorial),
 licensed under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/).
-The Si pseudopotential `Si.pz-vbc.UPF` is from the Quantum ESPRESSO pseudopotential library.
+The Si pseudopotential `Si.pz-vbc.UPF` is from the Quantum ESPRESSO pseudopotential library;
+`Fe.pbe-spn-rrkjus_psl.1.0.0.UPF` is from PSLibrary (A. Dal Corso), as distributed with the tutorial.

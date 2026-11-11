@@ -1,0 +1,57 @@
+&CONTROL
+! self-consistent calculation
+  calculation = 'scf'
+
+! name of the files written to outdir; the nscf run for the DOS reads them back
+  prefix = 'fe'
+  outdir = './tmp/'
+
+! directory of the pseudopotentials
+  pseudo_dir = '../pseudos/'
+/
+
+&SYSTEM
+! body-centered cubic (bcc) lattice
+  ibrav = 3
+
+! lattice constant a in bohr (2.868 Angstrom, the experimental value)
+  celldm(1) = 5.42
+
+  nat = 1
+  ntyp = 1
+
+! cutoffs in Ry. Ultrasoft pseudopotential: ecutrho = 8 x ecutwfc.
+! The pseudo's header suggests 71/496 Ry; 45 Ry already converges the
+! energy difference between the magnetic and non-magnetic states (Aula 7).
+  ecutwfc = 45
+  ecutrho = 360
+
+! Fe is a metal: smeared occupations, Marzari-Vanderbilt ("cold") smearing, 0.01 Ry
+  occupations = 'smearing'
+  smearing = 'mv'
+  degauss = 0.01
+
+! spin-polarized (collinear) calculation: two sets of Kohn-Sham equations
+  nspin = 2
+
+! initial spin polarization of species 1, between -1 and 1.
+! Without it the calculation stays non-magnetic (up and down densities stay equal).
+  starting_magnetization(1) = 0.6
+/
+
+&ELECTRONS
+! smaller mixing than the default 0.7: magnetic metals converge more smoothly
+  mixing_beta = 0.3
+
+! tighter than the default 1e-6 Ry, so that the magnetization is converged too
+  conv_thr = 1e-8
+/
+
+ATOMIC_SPECIES
+  Fe 55.845 Fe.pbe-spn-rrkjus_psl.1.0.0.UPF
+
+ATOMIC_POSITIONS crystal
+  Fe 0.0 0.0 0.0
+
+K_POINTS automatic
+  12 12 12 1 1 1

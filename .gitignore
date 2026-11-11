@@ -5,4 +5,5 @@ tmp/
 *.mix*
 # your own runs
 calculations/aula6/
+calculations/aula7/
 .ipynb_checkpoints/
