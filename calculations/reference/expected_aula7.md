@@ -33,19 +33,7 @@ Atom #   1: total charge =   3.9629, p =  2.8195, ...
 Spilling Parameter:   0.0093
 ```
 
-## Section 5 — the silicon atom (ld1.x, all electrons, LDA PZ)
-
-| | eV |
-|---|---|
-| −ε_3p, neutral atom (3p²) | 4.18 |
-| −ε_3p at 3p^1.5 (Slater transition state) | 7.77 |
-| I = E(Si⁺) − E(Si) | 7.84 |
-| I, experiment | 8.15 |
-
-Janak check (internal points f = 1.75, 1.5, 1.25): dE/df = −5.94, −7.79, −9.74 eV;
-ε_3p = −5.92, −7.77, −9.73 eV.
-
-## Section 6 — bcc iron (src/fe/pw.scf.fe.in: PBE, 45/360 Ry, 12×12×12 shifted, MV 0.01 Ry)
+## Section 5 — bcc iron (src/fe/pw.scf.fe.in: PBE, 45/360 Ry, 12×12×12 shifted, MV 0.01 Ry)
 
 ```
 FM: E = -247.76382329 Ry,  M = 2.34 muB,  |M| = 2.49 muB
