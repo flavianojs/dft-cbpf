@@ -3,6 +3,8 @@
 Hands-on sessions of the practical half of the DFT course of the CBPF graduate program,
 run with [Quantum ESPRESSO](https://www.quantum-espresso.org) on Google Colab.
 
+The GitHub links below (Aula 6) no longer work: use the copy `dft-cbpf.zip` given in class.
+
 ## Layout
 
 ```
@@ -33,14 +35,15 @@ Expected numbers for every step are in `calculations/reference/expected_aula6.md
 
 ## Aula 7 — bands, DOS and magnetism
 
-[Open aula7_handson.ipynb in Colab](https://colab.research.google.com/github/flavianojs/dft-cbpf/blob/main/notebooks/aula7_handson.ipynb)
+The course files are now distributed as `dft-cbpf.zip` (this folder), not through GitHub.
 
-Section 1 has the same two setup cells as in Aula 6 (install, then Drive); the Drive cell
-now also downloads the files that are new in Aula 7 (the Fe input and pseudopotential, this
-notebook and its reference numbers) into the copy already in your Drive. It does not use
-`git pull`: it runs `git fetch` and then `git checkout FETCH_HEAD -- <new files>`, so only
-those files are written. Anything you edited in your copy, such as the Aula 6 notebook or
-your calculations, is left as it is.
+1. Put `dft-cbpf.zip` at the top level of your Google Drive ("My Drive").
+2. Open `aula7_handson.ipynb` in Colab (from Drive: right click → Open with → Google Colaboratory).
+3. Run section 1. The install cell writes the Ubuntu 24.04 fix itself; the Drive cell unpacks
+   the zip with `unzip -n`: only files you do not have yet are extracted, nothing you already
+   have (your Aula 6 notebook, your calculations) is overwritten. Without a `dft-cbpf` folder,
+   it creates the whole folder.
+
 Expected numbers: `calculations/reference/expected_aula7.md`.
 
 ## Credits
