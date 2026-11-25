@@ -6,4 +6,6 @@ tmp/
 # your own runs
 calculations/aula6/
 calculations/aula7/
+calculations/aula8/
+calculations/project_*/
 .ipynb_checkpoints/
