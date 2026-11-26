@@ -56,8 +56,8 @@ Expected numbers: `calculations/reference/expected_aula7.md`.
 3. Run section 1. The setup cell downloads this repository and adds to your `MyDrive/dft-cbpf` folder
    only the files you do not have yet (nothing you already have is overwritten); without the folder,
    it creates it. If GitHub cannot be reached, it uses `dft-cbpf.zip` from the top of "My Drive".
-4. Section 3 is the hands-on: the electron density and the orbitals of silicon in real space, with `pp.x`
-   (on a plane and in 3D). The calculations are given, the plots are yours.
+4. Section 3 is a tutorial (nothing to fill in): the electron density and the orbitals of silicon in real
+   space, with `pp.x`, on a plane and in 3D.
 5. Sections 4 and 5 are graded: questions on DFT and the final project on one material
    (Al, C or MgO, assigned in class). Deliver the filled notebook two weeks after Aula 8.
 
